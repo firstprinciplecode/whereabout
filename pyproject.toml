@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whereabout"
+version = "0.1.0"
+description = "Fast situational-awareness CLI, protocol (whereabout/v1), and local place memory for AI agents."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "Thomas Petersen" }]
+keywords = ["agent", "cli", "context", "location", "situational-awareness", "whereabout"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Android",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = []
+
+[project.scripts]
+whereabout = "whereabout.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/firstprinciplecode/whereabout"
+Repository = "https://github.com/firstprinciplecode/whereabout"
+
+[tool.setuptools]
+packages = ["whereabout"]
